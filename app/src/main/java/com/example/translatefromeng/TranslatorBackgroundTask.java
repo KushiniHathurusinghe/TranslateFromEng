@@ -29,13 +29,16 @@ public class TranslatorBackgroundTask extends AsyncTask<String, Void, String> {
         //String variables
         String textToBeTranslated = params[0];
         String languagePair = params[1];
+        String yandexKey = params[2];
+        String url = params[3];
 
         String jsonString;
 
         try {
 
-            String yandexKey ="trnsl.1.1.20190902T072257Z.f4aff5988a52422e.3843adff41c629e14442440fd1384dbec76193c5";
-            String yandexUrl = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=" + yandexKey
+            //String yandexKey ="trnsl.1.1.20190902T072257Z.f4aff5988a52422e.3843adff41c629e14442440fd1384dbec76193c5";
+
+            String yandexUrl = url+"?key=" + yandexKey
                     + "&text=" + textToBeTranslated + "&lang=" + languagePair;
             URL yandexTranslateURL = new URL(yandexUrl);
 

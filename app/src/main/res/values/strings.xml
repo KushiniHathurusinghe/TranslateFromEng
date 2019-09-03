@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TranslateFromEng</string>
-    <string name="key">trnsl.1.1.20190902T072257Z.f4aff5988a52422e.3843adff41c629e14442440fd1384dbec76193c5</string>
-<string name="url">https://translate.yandex.net/api/v1.5/tr.json/translate</string>
+    <string name="key">"trnsl.1.1.20190902T072257Z.f4aff5988a52422e.3843adff41c629e14442440fd1384dbec76193c5"</string>
+    <string name="url">"https://translate.yandex.net/api/v1.5/tr.json/translate"</string>
     <string-array name="Languages">
         <item>"Select Language"</item>
         <item value="az">az</item>
