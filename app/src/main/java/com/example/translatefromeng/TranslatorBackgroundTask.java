@@ -36,13 +36,12 @@ public class TranslatorBackgroundTask extends AsyncTask<String, Void, String> {
 
         try {
 
-            //String yandexKey ="trnsl.1.1.20190902T072257Z.f4aff5988a52422e.3843adff41c629e14442440fd1384dbec76193c5";
 
             String yandexUrl = url+"?key=" + yandexKey
                     + "&text=" + textToBeTranslated + "&lang=" + languagePair;
             URL yandexTranslateURL = new URL(yandexUrl);
 
-            //Set Http Conncection, Input Stream, and Buffered Reader
+            // Http Conncection, Input Stream, Buffered Reader
 
             HttpURLConnection httpJsonConnection = (HttpURLConnection) yandexTranslateURL.openConnection();
             InputStream inputStream = httpJsonConnection.getInputStream();

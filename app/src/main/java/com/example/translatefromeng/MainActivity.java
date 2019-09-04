@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
                             InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
                             imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                         } catch (Exception e) {
-                            // TODO: handle exception
                         }
 
                     }
